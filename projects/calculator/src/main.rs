@@ -51,3 +51,5 @@ fn calculate(num1: f64, num2: f64, operator: &str) -> Option<f64> {
         _ => None,
     }
 }
+
+// test commit

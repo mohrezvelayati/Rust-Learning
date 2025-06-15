@@ -26,12 +26,17 @@ fn main() {
 
 
     println!("You entered: {} {} {}", num1, operator, num2);
-    // println!("Result: {}", result);
 
 
     match calculate(num1, num2, operator) {
         Some(result) => println!("Result: {}", result),
-        None => println!("Error: Invalid operator or division by zero"),
+        None => {
+            if operator == "/" && num2 == 0.0 {
+                println!("Error: Division by zero is not allowed.");
+            } else {
+                println!("Error: Invalid operator.");
+            }
+        }
     }
 
 }

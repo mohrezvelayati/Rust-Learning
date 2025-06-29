@@ -1,8 +1,12 @@
-use yew::prelude::*;
 mod components;
 
+use yew::prelude::*;
+
 use crate::components::header::Header;
-use crate::components::banner::Banner;
+// use crate::components::banner::Banner;
+use crate::components::sidebar::Sidebar;
+use crate::components::main_content::MainContent;
+use crate::components::intro::Intro;
 
 // #[function_component]
 // fn App() -> Html {
@@ -41,7 +45,10 @@ fn App() -> Html {
     html! {
         <div>
             <Header />
-            <Banner />
+            // <Banner />
+            <Intro />
+            <Sidebar />
+            <MainContent />
         </div>
     }
 }

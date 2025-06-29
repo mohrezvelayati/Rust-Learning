@@ -7,11 +7,20 @@
         <title>Yew App</title>
         <!-- ✅ Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="modulepreload" href="/yew_app-a2fd6111306f5da8.js" crossorigin="anonymous" integrity="sha384-GeQCQecDamMIPFpkKY+ndV3QNYrIRe8xm2obeT5DMiDAFxt7wuJPxCfhVAoWrXmz"><link rel="preload" href="/yew_app-a2fd6111306f5da8_bg.wasm" crossorigin="anonymous" integrity="sha384-h5pkqJ/sh34Y46VoaQCZqJPzz6k7/PntnU4IsRT9n6engwfvgnbJ9g627syrmi2j" as="fetch" type="application/wasm"></head>
+
+    <!-- Font Awesome CDN -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-*********"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"/>
+
+    <link rel="modulepreload" href="/yew_app-73d89705347683df.js" crossorigin="anonymous" integrity="sha384-68lrT+Bn/Z6/4gBKj83hTvhZbbafRFgtAVr93ot3OUwsvMex/cZjh+5eG1AbMEhK"><link rel="preload" href="/yew_app-73d89705347683df_bg.wasm" crossorigin="anonymous" integrity="sha384-+UfrUU29wfEQeTZHOEdxW03mV6f6MGX4zfGy5hjSGGCVJND0JykVvdDdRvnwryFD" as="fetch" type="application/wasm"></head>
     <body>
 <script type="module">
-import init, * as bindings from '/yew_app-a2fd6111306f5da8.js';
-const wasm = await init({ module_or_path: '/yew_app-a2fd6111306f5da8_bg.wasm' });
+import init, * as bindings from '/yew_app-73d89705347683df.js';
+const wasm = await init({ module_or_path: '/yew_app-73d89705347683df_bg.wasm' });
 
 
 window.wasmBindings = bindings;
